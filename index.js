@@ -36,7 +36,6 @@ module.exports = (results, data) => {
 
   Object.keys(overrideList).map((fpath) => {
     fs.writeFile(fpath, overrideList[fpath], (err) => {
-      // 書き出しに失敗した場合
       if (err) {
         console.error("Failed override: " + fpath);
         throw err;
@@ -46,5 +45,4 @@ module.exports = (results, data) => {
   });
 
   return JSON.stringify(overrideList, null, 2);
-  // return JSON.stringify(results, null, 2);
 };
