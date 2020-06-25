@@ -1,7 +1,7 @@
 {
   "name": "eslint-formatter-skip",
   "version": "0.0.2",
-  "description": "`eslint-formatter-skip` is library that adds skip comments for each file that cannot be automatically corrected by eslint.",
+  "description": "`eslint-formatter-skip` is library that adds `eslint-disable` comments for each file that cannot be automatically fix by eslint.",
   "author": "kmkzt<info.pscreator@gmail.com>",
   "main": "index.js",
   "files": [
