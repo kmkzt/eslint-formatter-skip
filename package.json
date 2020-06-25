@@ -1,0 +1,28 @@
+{
+  "name": "eslint-formatter-skip",
+  "version": "0.0.1",
+  "description": "`eslint-formatter-skip` is library that adds skip comments for each file that cannot be automatically corrected by eslint.",
+  "author": "kmkzt<info.pscreator@gmail.com>",
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "clear": "rm -rf temp; cp -r testdata temp;",
+    "dev": "yarn clear; yarn eslint -f ./ ./temp",
+    "test": "mocha lib/**/*.{test,spec}.js"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "7.2.0",
+    "eslint": "7.3.1",
+    "mocha": "5.0.5"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=12.0"
+  }
+}
