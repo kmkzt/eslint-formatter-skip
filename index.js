@@ -20,7 +20,6 @@ const logger = (filePath, source, output) => {
  */
 module.exports = (results, data) => {
   const overrideList = results.reduce((formatList, result) => {
-    // console.log(result);
     const { filePath, source, output, messages } = result;
     const errRules = messages.reduce((list, mes) => (!list.includes(mes.ruleId) ? [...list, mes.ruleId] : list), []);
     if (errRules.length === 0) return formatList;
