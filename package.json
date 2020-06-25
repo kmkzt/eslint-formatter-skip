@@ -1,10 +1,12 @@
 {
   "name": "eslint-formatter-skip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "`eslint-formatter-skip` is library that adds skip comments for each file that cannot be automatically corrected by eslint.",
   "author": "kmkzt<info.pscreator@gmail.com>",
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "clear": "rm -rf temp; cp -r testdata temp;",
     "dev": "yarn clear; yarn eslint -f ./ ./temp",
