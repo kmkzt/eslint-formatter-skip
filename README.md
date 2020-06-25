@@ -1,6 +1,6 @@
 # eslint-formatter-skip
 
-`eslint-formatter-skip` is library that adds skip comments for each file that cannot be automatically corrected by eslint.
+`eslint-formatter-skip` is library that adds `eslint-disable` comments for each file that cannot be automatically fix by eslint.
 This is useful when you get a lot of errors after changing the rules, updating versions, add plugins.
 
 ## Install
@@ -13,7 +13,7 @@ yarn add -D eslint-formatter-skip
 
 ## Usage
 
-Please note that it will be overwritten.
+Please be careful as the file will be overwritten
 
 ```shell
 yarn eslint -f skip src
