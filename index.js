@@ -36,10 +36,10 @@ module.exports = (results, data) => {
   Object.keys(overrideList).map((fpath) => {
     fs.writeFile(fpath, overrideList[fpath], (err) => {
       if (err) {
-        console.error("Failed override: " + fpath);
+        console.error("Failed overwrite: " + fpath);
         throw err;
       }
-      console.log("Success override: " + fpath);
+      console.log("Success overwrite: " + fpath);
     });
   });
 
