@@ -4,6 +4,12 @@
   "description": "`eslint-formatter-skip` is library that adds `eslint-disable` comments for each file that cannot be automatically fix by eslint.",
   "author": "kmkzt<info.pscreator@gmail.com>",
   "main": "index.js",
+  "repository": "github:kmkzt/eslint-formatter-skip",
+  "homepage": "https://github.com/kmkzt/eslint-formatter-skip",
+  "bugs": {
+    "url": "https://github.com/kmkzt/eslint-formatter-skip/issues",
+    "email": "info.pscreator@gmail.com"
+  },
   "files": [
     "index.js"
   ],
@@ -13,7 +19,8 @@
     "test": "mocha lib/**/*.{test,spec}.js"
   },
   "keywords": [
-    "eslint"
+    "eslint",
+    "eslint-disable"
   ],
   "license": "MIT",
   "devDependencies": {
